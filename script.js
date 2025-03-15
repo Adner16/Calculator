@@ -10,8 +10,9 @@ function cls(){
 }
 
 function calculate(){
+    let expression = display.value.replace(/x/g, '*');
     try{
-        display.value = eval(display.value);
+        display.value = eval(expression);
     } catch {
         display.value = "error";
     }
