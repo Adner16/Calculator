@@ -1,4 +1,4 @@
-console.log("funzipona");
+
 const display = document.getElementById("display");
 
 function addTodisplay(input){
