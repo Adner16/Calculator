@@ -8,26 +8,25 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text">
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
-        <div class="button"></div>
+        <input id="display" readonly>
+        <div class="container">
+            <div class="button" onclick="addTodisplay('7')">7</div>
+            <div class="button" onclick="addTodisplay('8')">8</div>
+            <div class="button" onclick="addTodisplay('9')">9</div>
+            <div class="button orange" onclick="addTodisplay('x')">x</div>
+            <div class="button" onclick="addTodisplay('4')">4</div>
+            <div class="button" onclick="addTodisplay('5')">5</div>
+            <div class="button" onclick="addTodisplay('6')">6</div>
+            <div class="button orange" onclick="addTodisplay('-')">-</div>
+            <div class="button" onclick="addTodisplay('1')">1</div>
+            <div class="button" onclick="addTodisplay('2')">2</div>
+            <div class="button" onclick="addTodisplay('3')">3</div>
+            <div class="button orange" onclick="addTodisplay('+')">+</div>
+            <div class="button" onclick="addTodisplay('0')">0</div>
+            <div class="button" onclick="addTodisplay('.')">.</div>
+            <div class="button" onclick="cls()">C</div>
+            <div class="button orange" onclick="calculate()">=</div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
