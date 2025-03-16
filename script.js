@@ -1,4 +1,4 @@
-
+console.log("test git")
 const display = document.getElementById("display");
 
 function addTodisplay(input){
