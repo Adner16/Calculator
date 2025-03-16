@@ -1,4 +1,4 @@
-console.log("test git")
+
 const display = document.getElementById("display");
 
 function addTodisplay(input){
@@ -14,12 +14,12 @@ function calculate(){
     
     if(expression.includes("%")){
         percent(expression);
-    }
-    
-    try{
-        display.value = eval(expression);
-    } catch {
-        display.value = "error";
+    } else {
+        try{
+            display.value = eval(expression);
+        } catch {
+            display.value = "error";
+        }
     }
     
 }
@@ -31,7 +31,9 @@ function deleteLast() {
 
 function percent(expr){
     const arr = expr.split('%');
-    display.value = arr[0] / 100 * arr[1];
+    const percent = parseFloat(arr[0]);
+    const value = parseFloat(arr[1]);
+    display.value = (percent / 100)* value;
 }
 
 
