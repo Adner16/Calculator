@@ -5,7 +5,7 @@ function addTodisplay(input){
     display.value += input;
 }
 
-function cls(){
+function clearDisplay(){
     display.value = "";
 }
 
