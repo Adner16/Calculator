@@ -11,17 +11,21 @@ function clearDisplay(){
 
 function calculate(){
     let expression = display.value.replace(/x/g, '*');
-    
-    if(expression.includes("%")){
-        percent(expression);
-    } else {
-        try{
-            display.value = eval(expression);
-        } catch {
-            display.value = "error";
+
+    try{
+        if(expression.includes("%")){
+            percent(expression);
+        } else {
+            const result = eval(expression);
+            if(isNaN(result)){
+                display.value = "error";
+            } else {
+                display.value = result;
+            }
         }
+    } catch {
+        display.value = "error";
     }
-    
 }
 
 function deleteLast() {
