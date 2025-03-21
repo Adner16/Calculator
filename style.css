@@ -38,6 +38,7 @@ input {
     margin-top: 135px;
     pointer-events: none;
     text-align: right;
+    outline: none;
 }
 
 .container {
